@@ -405,6 +405,7 @@ alb_6.addEventListener("click", (e) => {
  */
 function playMusic() {
   lectureMusique = true;
+  startLoop();
   play.classList.add("js-active");
   pause.classList.remove("js-active");
   audio.play();
@@ -426,8 +427,10 @@ function playMusic() {
     temps_restant.textContent = `${min_rest}:${sec_rest}`;
     tempsEcoule.textContent = `${min}:${sec}`;
   }, 1000);
-
-
+ audio.addEventListener('ended', e => {
+  forwardMusic();
+  playMusic();
+});
 }
 // seek.addEventListener('click', e => {
 //   ;
@@ -544,7 +547,6 @@ function stopLoop() {
 // surveillance des boutons de contrôle et déclenchement des fonctions correspondantes
 play.addEventListener("click", () => {
   playMusic();
-  startLoop();
 });
 
 pause.addEventListener("click", () => {
