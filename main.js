@@ -334,72 +334,48 @@ function removeClass() {
 }
 // active la bordure d'une image cliquée, charge la bibliothèque correspondante dans la liste de lecture
 alb_1.addEventListener("click", (e) => {
-  removeClass();
-  alb_1.classList.add("js-thumb-selected");
-  i = 0;
-  pause.classList.remove("js-active");
-  play.classList.remove("js-active");
   currentList = liste_2222;
-  loadMusic(currentList[i]);
-  loadListeLecture();
-  stopLoop();
+  resetAndLoad();
+  alb_1.classList.add("js-thumb-selected");
 });
 alb_2.addEventListener("click", (e) => {
-  i = 0;
-  removeClass();
-  pause.classList.remove("js-active");
-  play.classList.remove("js-active");
-  alb_2.classList.add("js-thumb-selected");
   currentList = liste_FlorDeCanela;
-  loadMusic(currentList[i]);
-  loadListeLecture();
-  stopLoop();
+  resetAndLoad();
+  alb_2.classList.add("js-thumb-selected");
+
+
 });
 alb_3.addEventListener("click", (e) => {
-  i = 0;
-  removeClass();
-  pause.classList.remove("js-active");
-  play.classList.remove("js-active");
-  alb_3.classList.add("js-thumb-selected");
   currentList = liste_esperanza;
-  loadMusic(currentList[i]);
-  loadListeLecture();
-  stopLoop();
+  resetAndLoad();
+  alb_3.classList.add("js-thumb-selected");
+
 });
 alb_4.addEventListener("click", (e) => {
-  i = 0;
-  removeClass();
-  pause.classList.remove("js-active");
-  play.classList.remove("js-active");
-  alb_4.classList.add("js-thumb-selected");
   currentList = liste_jabulani;
-  loadMusic(currentList[i]);
-  loadListeLecture();
-  stopLoop();
+  resetAndLoad();
+  alb_4.classList.add("js-thumb-selected");
 });
 alb_5.addEventListener("click", (e) => {
-  i = 0;
-  removeClass();
-  pause.classList.remove("js-active");
-  play.classList.remove("js-active");
   currentList = liste_works;
-  loadMusic(currentList[i]);
-  loadListeLecture();
-  stopLoop();
+  resetAndLoad();
   alb_5.classList.add("js-thumb-selected");
 });
 alb_6.addEventListener("click", (e) => {
-  i = 0;
-  removeClass();
-  pause.classList.remove("js-active");
-  play.classList.remove("js-active");
   currentList = liste_instants;
-  loadMusic(currentList[i]);
-  loadListeLecture();
-  stopLoop();
+  resetAndLoad();
   alb_6.classList.add("js-thumb-selected");
 });
 
+function resetAndLoad(){
+  i = 0;
+  loadMusic(currentList[i]);
+  loadListeLecture();
+  stopLoop();
+  removeClass();
+  pause.classList.remove("js-active");
+  play.classList.remove("js-active");
+}
 /**
  * active la lecture du morceau chargé, déclenche le compteur du temps passé et restant
  */
