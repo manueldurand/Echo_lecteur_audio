@@ -75,7 +75,7 @@ label[for = 'theme_couleur']:hover{
   grid-template-areas: 
   "alb_1 alb_2 alb_3"
   "alb_4 alb_5 alb_6";
-  padding: 2% 2% 0 2%;
+  padding: 2%;
   width: 50%;
   height: 59%;
   border: 12px solid var(--main-nav-border-color);

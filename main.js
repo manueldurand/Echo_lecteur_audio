@@ -156,7 +156,7 @@ const liste_esperanza = [
 
 const liste_FlorDeCanela = [
   {
-    src: "./La_flor_de_la_canela/01_La_Flor_de_la_Canela.mp3",
+    src: "./La_flor_de_la_canela/01_laFlorDeCanela.mp3",
     artiste: "Flor de Canela",
     nom: "1. La Flor de la Canela",
     duration: 175,
@@ -274,6 +274,8 @@ theme_coul.addEventListener("click", (e) => {
   root.style.setProperty("--side-nav-border-color", "#69c76d");
   root.style.setProperty("--player-border-color", " #3063c5");
   root.style.setProperty("--main-font-color", " #3063c5");
+  root.style.setProperty("--bleu-clair", "#94C8F7");
+
   theme_coul.checked = true;
   changeColor();
 });
