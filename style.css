@@ -12,6 +12,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  width: 90vw;
 }
 
 html {
@@ -217,13 +218,13 @@ audio{
   position: absolute;
   width: 10%;
   top: 84%;
-  left: 77%;
+  left: 75%;
   transform: rotate(-90deg);
 }
 #speaker{
   position: absolute;
   top: 83%;
-  left: 77%;
+  left: 75%;
 }
 .btn_control{
   width:auto;
