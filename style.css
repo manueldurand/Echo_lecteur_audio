@@ -116,6 +116,7 @@ label[for = 'theme_couleur']:hover{
   border: var(--main-font-color) 4px solid;
   transition: all 0.1s;
   border-radius: 6px;
+  cursor: pointer;
 }
 .thumbnails:active{
   border: var(--side-nav-border-color) 4px solid;
